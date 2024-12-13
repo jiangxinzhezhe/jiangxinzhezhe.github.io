@@ -1,0 +1,130 @@
+{
+    "cocktails": {
+        "Mojito": {
+            "ingredients": [
+                "white rum",
+                "lime",
+                "mint leaves",
+                "sugar syrup",
+                "soda water"
+            ],
+            "image": "images/cocktails/mojito.jpg",
+            "description": "A refreshing Cuban classic cocktail",
+            "instructions": [
+                "Place mint leaves and lime wedges in glass",
+                "Add sugar syrup",
+                "Muddle gently to release flavors",
+                "Add white rum",
+                "Fill with crushed ice",
+                "Top with soda water",
+                "Stir gently"
+            ],
+            "glass": "Highball",
+            "category": "Classic Cocktails",
+            "difficulty": "Easy"
+        },
+        "Gin & Tonic": {
+            "ingredients": [
+                "gin",
+                "tonic water",
+                "lime"
+            ],
+            "image": "images/cocktails/gin-tonic.jpg",
+            "description": "A simple and elegant classic",
+            "instructions": [
+                "Fill highball glass with ice",
+                "Pour in gin",
+                "Top with tonic water",
+                "Garnish with lime wedge",
+                "Stir gently"
+            ],
+            "glass": "Highball",
+            "category": "Classic Cocktails",
+            "difficulty": "Beginner"
+        },
+        "Margarita": {
+            "ingredients": [
+                "tequila",
+                "cointreau",
+                "lime juice",
+                "salt"
+            ],
+            "image": "images/cocktails/margarita.jpg",
+            "description": "The classic Mexican cocktail",
+            "instructions": [
+                "Rim glass with salt using lime juice",
+                "Add ice to shaker",
+                "Pour in tequila, cointreau and lime juice",
+                "Shake well",
+                "Strain into glass"
+            ],
+            "glass": "Margarita",
+            "category": "Classic Cocktails",
+            "difficulty": "Intermediate"
+        },
+        "Bloody Mary": {
+            "ingredients": [
+                "vodka",
+                "tomato juice",
+                "lemon juice",
+                "hot sauce",
+                "black pepper",
+                "salt"
+            ],
+            "image": "images/cocktails/bloody-mary.jpg",
+            "description": "The classic brunch cocktail",
+            "instructions": [
+                "Fill highball glass with ice",
+                "Pour in vodka",
+                "Add tomato juice",
+                "Add lemon juice",
+                "Season with hot sauce, pepper and salt to taste",
+                "Stir well"
+            ],
+            "glass": "Highball",
+            "category": "Classic Cocktails",
+            "difficulty": "Easy"
+        },
+        "Long Island Iced Tea": {
+            "ingredients": [
+                "vodka",
+                "gin",
+                "white rum",
+                "tequila",
+                "cointreau",
+                "lemon juice",
+                "cola"
+            ],
+            "image": "images/cocktails/long-island.jpg",
+            "description": "A potent mix of multiple spirits",
+            "instructions": [
+                "Fill highball glass with ice",
+                "Add all spirits",
+                "Add lemon juice",
+                "Top with cola",
+                "Stir gently"
+            ],
+            "glass": "Highball",
+            "category": "Classic Cocktails",
+            "difficulty": "Intermediate"
+        }
+    },
+    "categories": [
+        "Classic Cocktails",
+        "Creative Cocktails",
+        "Non-Alcoholic Cocktails"
+    ],
+    "glasses": [
+        "Highball",
+        "Margarita",
+        "Old Fashioned",
+        "Champagne Flute",
+        "Martini"
+    ],
+    "difficulties": [
+        "Beginner",
+        "Easy",
+        "Intermediate",
+        "Advanced"
+    ]
+}
