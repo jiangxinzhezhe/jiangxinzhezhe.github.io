@@ -4,6 +4,7 @@
     <meta charset="UTF-8" lang="en" dir="ltr">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cocktail Genie - 你的私人调酒助手</title>
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
     <link href="style/styles.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -26,35 +27,24 @@
         <section id="ingredient-selector">
             <h2>选择可用材料</h2>
             <div class="ingredient-categories">
-                <div class="category">
+                <div id="base-spirits" class="category">
                     <h3>基酒</h3>
                     <div class="ingredients">
-                        <label><input type="checkbox" name="base" value="龙舌兰"> 龙舌兰</label>
-                        <label><input type="checkbox" name="base" value="白朗姆"> 白朗姆</label>
-                        <label><input type="checkbox" name="base" value="伏特加"> 伏特加</label>
-                        <label><input type="checkbox" name="base" value="金酒"> 金酒</label>
+                        <!-- 将由JavaScript填充 -->
                     </div>
                 </div>
                 
-                <div class="category">
+                <div id="liqueurs" class="category">
                     <h3>利口酒</h3>
                     <div class="ingredients">
-                        <label><input type="checkbox" name="liqueur" value="君度橙力娇酒"> 君度橙力娇酒</label>
-                        <label><input type="checkbox" name="liqueur" value="咖啡利口酒"> 咖啡利口酒</label>
-                        <label><input type="checkbox" name="liqueur" value="蓝橙力娇酒"> 蓝橙力娇酒</label>
-                        <label><input type="checkbox" name="liqueur" value="杏仁利口酒"> 杏仁利口酒</label>
+                        <!-- 将由JavaScript填充 -->
                     </div>
                 </div>
                 
-                <div class="category">
+                <div id="mixers" class="category">
                     <h3>辅料</h3>
                     <div class="ingredients">
-                        <label><input type="checkbox" name="mixer" value="青柠汁"> 青柠汁</label>
-                        <label><input type="checkbox" name="mixer" value="薄荷叶"> 薄荷叶</label>
-                        <label><input type="checkbox" name="mixer" value="苏打水"> 苏打水</label>
-                        <label><input type="checkbox" name="mixer" value="糖浆"> 糖浆</label>
-                        <label><input type="checkbox" name="mixer" value="可乐"> 可乐</label>
-                        <label><input type="checkbox" name="mixer" value="柠檬汁"> 柠檬汁</label>
+                        <!-- 将由JavaScript填充 -->
                     </div>
                 </div>
             </div>
