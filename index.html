@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    
         <header>
             <nav id="indexnav">
                 <ul id="nav-links">
@@ -21,135 +22,267 @@
             </nav>
         </header> 
 
-    <main id="mainpage_grid">
-        <div id="hi">
-            <p style="font-size: 20px;" id="gre">Hi, I am</p>
-            <h1 id="name">Xinzhe</h1>
-            <h1 id="name">Jiang</h1>
-            <a href="pages/portfolio.html"><p id="talk">Let's Talk --></p></a>
-            <a href="https://www.linkedin.com/in/xinzhejiang" ><img src="images/linkedin.png" alt="mylinkedin" id="ly"></a>
-        </div>
-        <img id="indexphoto" src="images/indexphoto1.png" alt="Xinzhe Jiang Photo"/>
-        <div>
-            <h2  id="intro">Game Designer</h2>
-            <h2  id="intro">Photographer</h2>
-            <h2  id="intro">Director</h2>
-            <p id="aboutme">
-                I am a MEng student in Game Design at Duke  University. <br>
-                I aspire to combine technical artistry and game design to create immersive experiences that blend creativity with strategic production, enhancing communication, societal impact, and cultural depth.
-            </p>
-            <a href="images/XinzheJiang_Resume.pdf"><button id="downloadcv">Download CV</button></a>
-        </div>
-    </main>
-
-    <article id="latest">
-        <h1 id="latestport">Latest Portfolio</h1>
-        <p id="latestintro" style="font-size: 20px; margin-left: 150px; opacity: 0.7; line-height: 40px;">Scoll to see my recent projects.</p>
-        <section id="latestportfolio">
-            <div>
-                <div class="ppp" id="image_popup">
-                    <button id="close-btn" onclick="closePopup()">X</button><br>
-                    <img id="large-image" src="images/StreetSH/street_6.jpg" alt="street" >
-                </div>
-                <div class="ppp" id="image2_popup">
-                    <button id="close-btn" onclick="closePopup2()">X</button><br>
-                    <img id="large-image" src="images/StreetSH/street_5.jpg" alt="street" >
-                </div>
-                <div class="ppp" id="image3_popup">
-                    <button id="close-btn" onclick="closePopup3()">X</button><br>
-                    <img id="large-image" src="images/StreetSH/street_10.jpg" alt="street" >
-                </div>
-                <div class="ppp" id="builder_popup">
-                    <button id="close-btn" onclick="closePopup1()">X</button><br>
-                    <img id="large-image" src="images/Builder_2/Builder_1.jpg" alt="Builder" style="width: 900px;" >
-                </div>
-                <div class="ppp" id="builder2_popup">
-                    <button id="close-btn" onclick="closePopup4()">X</button><br>
-                    <img id="large-image" src="images/Builder_2/Builder_10.jpg" alt="Builder" style="width: 900px;" >
-                </div>
-                <div class="ppp" id="builder3_popup">
-                    <button id="close-btn" onclick="closePopup5()">X</button><br>
-                    <img id="large-image" src="images/Builder_1/builder_2.jpg" alt="Builder" style="width: 600px;" >
-                </div>
-                <div class="ppp" id="builder4_popup">
-                    <button id="close-btn" onclick="closePopup6()">X</button><br>
-                    <img id="large-image" src="images/Builder_1/builder_4.jpg" alt="Builder" style="width: 600px;" >
-                </div>
-                
-                
-                <div class="slider-wrap" id="photography">
-                    <div class="container">
-                        <img class="img" src="images/StreetSH/street_6.jpg" alt="street" width="340px" onclick="myFunction()"/>
-                    </div>
-                    <div class="container">
-                        <img class="img" src="images/StreetSH/street_5.jpg" alt="street" width="340px" onclick="myFunction2()"/>
-                    </div>
-                    <div class="container">
-                        <img class="img" src="images/StreetSH/street_10.jpg" alt="street" width="340px" onclick="myFunction3()"/>
-                    </div>
-
-
-                    <div class="container">
-                        <img class="img" src="images/Builder_2/Builder_1.jpg" alt="Builder" width="340px" onclick="builderFunc1()"/>
-                    </div>
-                    <div class="container">
-                        <img class="img" src="images/Builder_2/Builder_10.jpg" alt="Builder" width="340px" onclick="myFunction4()"/>
-                    </div>
-                    <div class="container">
-                        <img class="img" src="images/Builder_1/builder_2.jpg" alt="Builder" width="340px" onclick="builderFunc5()"/>
-                    </div>
-                    <div class="container">
-                        <img class="img" src="images/Builder_1/builder_4.jpg" alt="Builder" width="340px" onclick="builderFunc6()"/>
-                    </div>
-
-                </div>
-                <img class="icon" id="camera" src="images/camera.png" alt="camera.png" height="28px" style="margin-left: 20px; margin-top: -20px;">
-                <h2 style="margin-left: 20px;margin-top: 10px;">Photography</h2>
+        <main id="mainpage_grid">
+            <div id="hi">
+                <p style="font-size: 20px;" id="gre">Hi, I am</p>
+                <h1 id="name">Xinzhe</h1>
+                <h1 id="name">Jiang</h1>
+                <a href="pages/portfolio.html"><p id="talk">Let's Talk --></p></a>
+                <a href="https://www.linkedin.com/in/xinzhejiang" ><img src="images/linkedin.png" alt="mylinkedin" id="ly"></a>
             </div>
+            <img id="indexphoto" src="images/GeorgiaJiang.png" alt="Xinzhe Jiang Photo"/>
             <div>
-                <div class="slider-wrap" id="video">
-                    <video width="400" controls>
-                        <source src="images/Rural_Christian/Rural_C_press.mp4" type="video/mp4">
-                        Your browser does not support HTML video.
-                    </video>
-                    <video width="400" controls>
-                        <source src="images/city_sounds_scape_suzhou/suzhou_live_press.mp4" type="video/mp4">
-                        Your browser does not support HTML video.
-                    </video>
-                    <video width="400" controls>
-                        <source src="images/Tangsong/tangsong_press.mp4" type="video/mp4">
-                        Your browser does not support HTML video.
-                    </video>
-                </div>
-                <img class="icon" id="camera" src="images/star.png" alt="camera.png" height="30px" style="margin-left: 20px; margin-top: -20px;">
-                <h2 style="margin-left: 20px;margin-top: 10px;">Video</h2>
+                <h2  id="intro">Game Designer</h2>
+                <h2  id="intro">Photographer</h2>
+                <h2  id="intro">Director</h2>
+                <p id="aboutme">
+                    I am a Game Design Master student at Duke  University. <br>
+                    I aspire to combine technical artistry and game design to create immersive experiences that blend creativity with strategic production, enhancing communication, societal impact, and cultural depth.
+                </p>
+                <a href="images/XinzheJiang_Resume.pdf"><button id="downloadcv">Download CV</button></a>
             </div>
-            <div>
-                <div class="slider-wrap" id="website">
-                    <a href="https://jiangxinzhezhe.github.io/thiswordabandonedme/index.html"><img src="images/surfacethisword.png" alt="thiswordabandonedme" width="340px"/> </a>
+        </main>
+
+        <article id="latest">
+            <h1 id="latestport">Latest Portfolio</h1>
+            <p id="latestintro" style="font-size: 20px; margin-left: 150px; opacity: 0.7; line-height: 40px;">Scoll down to see my projects.</p>
+
+            <h1 id="latestport">Games</h1>
+            <div class="row">
+                <div class="indexcolumn">
+                    <a href="https://georgiajiang.itch.io/aikemilktea"><img src="images/AikeMilktea.png" alt="AikeMilktea"/> </a>
+                    
+                </div>
+                <div class="indexcolumn">
+                    <a href="https://georgiajiang.itch.io/aikemilktea"><img src="images/AikeMilktea.png" alt="AikeMilktea"/> </a>
+                </div>
+            </div>
+
+            
+            <h1 id="latestport">
+                <img class="icon" id="camera" src="images/web.png" alt="camera.png" height="40px" style="margin-left: -50px">
+                Websites
+            </h1>
+            <div class="row">
+                <div class="indexcolumn">
+                    <a href="https://jiangxinzhezhe.github.io/thiswordabandonedme/index.html"><img src="images/surfacethisword.png" alt="thiswordabandonedme" /> </a>
+                </div>
+                <div class="indexcolumn">
                     <a href="https://jiangxinzhezhe.github.io/firstassign/index.html">
-                    <img src="images/surfacehaizi.png" alt="haiziweb" width="340px"/></a>   
-                    <a href="https://jiangxinzhezhe.github.io/JS_Xinzhe/index.html"><img src="images/wuxingsurface.png" alt="wuxing" width="340px"/> </a>
-                    <a href="https://jiangxinzhezhe.github.io/LayingOutLayouts/index.html"><img src="images/layingsurface.png" alt="layingout" width="340px"/> </a>
+                        <img src="images/surfacehaizi.png" alt="haiziweb" /></a>
                 </div>
-                <img class="icon" id="camera" src="images/web.png" alt="camera.png" height="35px" style="margin-left: 20px; margin-top: -20px;">
-                <h2 style="margin-left: 20px; margin-top: 10px;">Websites</h2>
             </div>
-            <p id="verti">Xinzhe Jiang</p>
-        </section>
-    </div>
-    
-    </article>
+            <div class="row">
+                <div class="indexcolumn">
+                    <a href="https://jiangxinzhezhe.github.io/JS_Xinzhe/index.html"><img src="images/wuxingsurface.png" alt="wuxing" /> </a>
+                </div>
+                <div class="indexcolumn">
+                    <a href="https://jiangxinzhezhe.github.io/LayingOutLayouts/index.html"><img src="images/layingsurface.png" alt="layingout"/> </a>
+                </div>
+            </div>
 
-    <footer id="footer">
-        <h1 id="footcontact">Contact Me</h1>
-        <div id="media">
-            <a href="https://twitter.com/jiang_xinzhe"><img src="images/twitter.png" height=35px></a>
-            <a href="https://www.instagram.com/jiangxinzhezhe/"><img src="images/ins.png" height=35px style="margin-left: 25px; margin-right: 25px;"></a>
-            <a href="mailto:jiangxinzhezhe@outlook.com"><img src="images/mail.png" height=35px></a>
+            <h1 id="latestport">
+                <img class="icon" id="camera" src="images/web.png" alt="camera.png" height="40px" style="margin-left: -50px">
+                Videos
+            </h1>
+            <div class="row">
+                <div class="indexcolumn">
+                    <div style="position: relative; padding-bottom: 56.25%; width: 80%; height: 0; margin: 0 auto; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/JzAs_COIm_4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="indexcolumn">
+                    <div style="position: relative; padding-bottom: 56.25%; width: 80%; height: 0; margin: 0 auto; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/zxNuqzcTB-I" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <h1 id="latestport">
+                <img class="icon" id="camera" src="images/web.png" alt="camera.png" height="40px" style="margin-left: -50px">
+                Photography
+            </h1>
+
+            <article id="project1">
+                <div class="header">
+                    <h1 id="indexportintro">Street</h1>
+                    <p id="indexportdetail">Street in Shanghai, a mixture of modern and tradition, east and west.</p>
+                </div>
+                <div class="row"> 
+                    <div class="column">
+                        <img src="images/StreetSHEXP/street_3.jpg" style="width:100%">
+                        <img src="images/StreetSHEXP/street_1.jpg" style="width:100%">
+                        <img src="images/StreetSHEXP/street_2.jpg" style="width:100%">
+                    </div>
+                    <div class="column">
+                        
+                        <img src="images/StreetSHEXP/street_7.jpg" style="width:100%">
+                        <img src="images/StreetSHEXP/street_5.jpg" style="width:100%">
+                        <img src="images/StreetSHEXP/street_6.jpg" style="width:100%">
+                        <img src="images/StreetSHEXP/street_11.jpg" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/StreetSHEXP/street_4.jpg" style="width:100%">
+                        
+                        <img src="images/StreetSHEXP/street_10.jpg" style="width:100%">
+                        <img src="images/StreetSHEXP/street_8.jpg" style="width:100%">
+                        <img src="images/StreetSHEXP/street_9.jpg" style="width:100%">
+                    </div>
+                </div>
+            </article>
+
+            <article id="project2">
+                <div class="header">
+                    <h1 id="indexportintro">Builder</h1>
+                    <p id="indexportdetail">We are the passersby sometimes investigate a building site and observing the happenings in it. We are the witness of the growing tall buildings. The spotlight always brightens the reinforced concrete and sparkling glass, however, never highlight the workers’ faces. We do not know this team have more than 50 million and haven been the largest industrial labor group in the world in 2020. This project named <i>Builder</i> displays the working process of the construction workers, the builder of China’s urban prosperity. The audiences can have a better understanding of the construction workers’ tasks and working conditions. </p>
+                </div>
+                <div class="row"> 
+                    <div class="column">
+                        <img src="images/Builder1EXP/builder_1.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_15.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_12.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_13.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_17.jpg" style="width:100%">
+                        <img src="images/Builder2EXP/Builder_13.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_14.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_24.jpg" style="width:100%">
+                        <img src="images/Builder2EXP/Builder_4.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_9.jpg" style="width:100%">
+                        
+                    </div>
+                    <div class="column">
+                        <img src="images/Builder1EXP/builder_8.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_19.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_3.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_11.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_2.jpg" style="width:100%">
+                        <img src="images/Builder2EXP/Builder_17.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_10.jpg" style="width:100%">
+                        <img src="images/Builder2EXP/Builder_10.jpg" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Builder1EXP/builder_16.jpg" style="width:100%">
+                        <img src="images/Builder2EXP/Builder_2.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_4.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_5.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_6.jpg" style="width:100%">
+                        <img src="images/Builder2EXP/Builder_12.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_23.jpg" style="width:100%">
+                        <img src="images/Builder1EXP/builder_7.jpg" style="width:100%">
+                        <img src="images/Builder2EXP/Builder_1.jpg" style="width:100%">
+    
+                    </div> 
+                </div>
+            </article>
+
+        <!--
+            <section id="latestportfolio">
+                <div>
+                    <div class="ppp" id="image_popup">
+                        <button id="close-btn" onclick="closePopup()">X</button><br>
+                        <img id="large-image" src="images/StreetSH/street_6.jpg" alt="street" >
+                    </div>
+                    <div class="ppp" id="image2_popup">
+                        <button id="close-btn" onclick="closePopup2()">X</button><br>
+                        <img id="large-image" src="images/StreetSH/street_5.jpg" alt="street" >
+                    </div>
+                    <div class="ppp" id="image3_popup">
+                        <button id="close-btn" onclick="closePopup3()">X</button><br>
+                        <img id="large-image" src="images/StreetSH/street_10.jpg" alt="street" >
+                    </div>
+                    <div class="ppp" id="builder_popup">
+                        <button id="close-btn" onclick="closePopup1()">X</button><br>
+                        <img id="large-image" src="images/Builder_2/Builder_1.jpg" alt="Builder" style="width: 900px;" >
+                    </div>
+                    <div class="ppp" id="builder2_popup">
+                        <button id="close-btn" onclick="closePopup4()">X</button><br>
+                        <img id="large-image" src="images/Builder_2/Builder_10.jpg" alt="Builder" style="width: 900px;" >
+                    </div>
+                    <div class="ppp" id="builder3_popup">
+                        <button id="close-btn" onclick="closePopup5()">X</button><br>
+                        <img id="large-image" src="images/Builder_1/builder_2.jpg" alt="Builder" style="width: 600px;" >
+                    </div>
+                    <div class="ppp" id="builder4_popup">
+                        <button id="close-btn" onclick="closePopup6()">X</button><br>
+                        <img id="large-image" src="images/Builder_1/builder_4.jpg" alt="Builder" style="width: 600px;" >
+                    </div>
+                    
+                    
+                    <div class="slider-wrap" id="photography">
+                        <div class="container">
+                            <img class="img" src="images/StreetSH/street_6.jpg" alt="street" width="340px" onclick="myFunction()"/>
+                        </div>
+                        <div class="container">
+                            <img class="img" src="images/StreetSH/street_5.jpg" alt="street" width="340px" onclick="myFunction2()"/>
+                        </div>
+                        <div class="container">
+                            <img class="img" src="images/StreetSH/street_10.jpg" alt="street" width="340px" onclick="myFunction3()"/>
+                        </div>
+
+
+                        <div class="container">
+                            <img class="img" src="images/Builder_2/Builder_1.jpg" alt="Builder" width="340px" onclick="builderFunc1()"/>
+                        </div>
+                        <div class="container">
+                            <img class="img" src="images/Builder_2/Builder_10.jpg" alt="Builder" width="340px" onclick="myFunction4()"/>
+                        </div>
+                        <div class="container">
+                            <img class="img" src="images/Builder_1/builder_2.jpg" alt="Builder" width="340px" onclick="builderFunc5()"/>
+                        </div>
+                        <div class="container">
+                            <img class="img" src="images/Builder_1/builder_4.jpg" alt="Builder" width="340px" onclick="builderFunc6()"/>
+                        </div>
+
+                    </div>
+                    <img class="icon" id="camera" src="images/camera.png" alt="camera.png" height="28px" style="margin-left: 20px; margin-top: -20px;">
+                    <h2 style="margin-left: 20px;margin-top: 10px;">Photography</h2>
+                </div>
+                <div>
+                    <div class="slider-wrap" id="video">
+                        <video width="400" controls>
+                            <source src="images/Rural_Christian/Rural_C_press.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <video width="400" controls>
+                            <source src="images/city_sounds_scape_suzhou/suzhou_live_press.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <video width="400" controls>
+                            <source src="images/Tangsong/tangsong_press.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <img class="icon" id="camera" src="images/star.png" alt="camera.png" height="30px" style="margin-left: 20px; margin-top: -20px;">
+                    <h2 style="margin-left: 20px;margin-top: 10px;">Video</h2>
+                </div>
+                <div>
+                    <div class="slider-wrap" id="website">
+                        <a href="https://jiangxinzhezhe.github.io/thiswordabandonedme/index.html"><img src="images/surfacethisword.png" alt="thiswordabandonedme" width="340px"/> </a>
+                        <a href="https://jiangxinzhezhe.github.io/firstassign/index.html">
+                        <img src="images/surfacehaizi.png" alt="haiziweb" width="340px"/></a>   
+                        <a href="https://jiangxinzhezhe.github.io/JS_Xinzhe/index.html"><img src="images/wuxingsurface.png" alt="wuxing" width="340px"/> </a>
+                        <a href="https://jiangxinzhezhe.github.io/LayingOutLayouts/index.html"><img src="images/layingsurface.png" alt="layingout" width="340px"/> </a>
+                    </div>
+                    <img class="icon" id="camera" src="images/web.png" alt="camera.png" height="35px" style="margin-left: 20px; margin-top: -20px;">
+                    <h2 style="margin-left: 20px; margin-top: 10px;">Websites</h2>
+                </div>
+                <p id="verti">Xinzhe Jiang</p>
+            </section>
         </div>
-        <p>&copy; 2024 <a href="mailto:jiangxinzhezhe@outlook.com" id="mail"><b style="color: #ffffffff;">Xinzhe Jiang</b></a></p>
-    </footer>
+        -->
+        
+        </article>
+
+        <footer id="footer">
+            <h1 id="footcontact">Contact Me</h1>
+            <div id="media">
+                <a href="https://twitter.com/jiang_xinzhe"><img src="images/twitter.png" height=35px></a>
+                <a href="https://www.instagram.com/jiangxinzhezhe/"><img src="images/ins.png" height=35px style="margin-left: 25px; margin-right: 25px;"></a>
+                <a href="mailto:jiangxinzhezhe@outlook.com"><img src="images/mail.png" height=35px></a>
+            </div>
+            <p>&copy; 2025 <a href="mailto:jiangxinzhezhe@outlook.com" id="mail"><b style="color: #ffffffff;">Xinzhe Jiang</b></a></p>
+        </footer>
+    
 </body>
 
 <script src="scripts/personalweb.js"></script>
