@@ -134,7 +134,7 @@ function Game() {
   return (
     <ArticlePage
       title="Game Development"
-      desc="..."
+      desc="I always believe that game should go beyond entertainment, serving as a powerful medium for storytelling, emotional connection, and personal growth."
       items={[
         {
           title: "Ech8",
@@ -182,32 +182,32 @@ function Website() {
   return (
     <ArticlePage
       title="Website Development"
-      desc="..."
+      desc="An OLD form of digital medium that connects people worldwide. I still find it facinating, for the endless creations in the past and future."
       items={[
         {
           title: "This World Abandoned Me",
           img: "/images/thisworld.png",
           text: "Language-based puzzle…",
-          link: "/thisworldabandonedme/index.html",
+          link: "/thiswordabandonedme/index.html",
         },
         {
           title: "Wu Xing",
           img: "/images/wuxing.png",
           text: "Tarot-inspired alchemy…",
-          link: "/game/witchalchemy",
+          link: "/JS_Xinzhe/index.html",
           side: "right",
         },
         {
           title: "Haizi's Poetry",
           img: "/images/haizi.png",
           text: "Emotional journaling app…",
-          link: "/game/cryrec",
+          link: "/firstassign/index.html",
         },
         {
           title: "Laying out Layouts",
           img: "/images/layin.png",
           text: "Kotlin greedy agent…",
-          link: "/game/planetwars",
+          link: "/LayingOutLayouts/index.html",
         },
       ]}
     />
@@ -218,7 +218,7 @@ function Documentary() {
   return (
     <ArticlePage
       title="Documentary"
-      desc="..."
+      desc="Audio-visual coupling is my favorite definition of documentary. It is more a way of expression for the person that holding the camera. But will the audienced be directed to feel the same as the one behind the camera?"
       items={[
         {
           title: "Rural Christian",
@@ -262,7 +262,7 @@ function Playground() {
       {/* Section 1: Street */}
       <PhotoSection
         title="Street"
-        desc="Street in Shanghai, a mixture of modern and tradition, east and west."
+        desc="French Concession Street in Shanghai, one of my favorite places. When the lights come on at night, will you also hear the phonograph playing as me?"
         images={[
           "/images/StreetSH/street_1.jpg",
           "/images/StreetSH/street_2.jpg",
@@ -281,7 +281,7 @@ function Playground() {
       {/* Section 2: Builder */}
       <PhotoSection
         title="Builder"
-        desc="We are the passersby sometimes investigate a building site and observing the happenings in it..."
+        desc="In only half a century, China has already built numerous skyscrapers that reshape the urban landscape. As a passerby, I seldom noticed those people working in those sites. Then one day I walked in and heard their stories."
         images={[
           "/images/Builder_1/builder_1.jpg",
           "/images/Builder_2/Builder_1.jpg",
@@ -381,15 +381,22 @@ function About() {
       >
         <div>
           <p style={{ ...styles.bodyText, whiteSpace: "pre-line" }}>
-            I’m Xinzhe Jiang. A cross-disciplinary developer and designer
-            passionate about creating immersive, meaningful digital experiences
-            that connect people and inspire emotion.
+            Born at the beginning of the 21st century, I have witnessed the
+            rapid evolution of technology and its profound impact on society.
+            From Television to computer, medium is becoming an integral part of
+            human experience, shaping how we perceive and interact with the
+            world.
             {"\n"}
-            My background bridges game development, interactive storytelling,
-            and product strategy — blending creativity with technical precision.
-            {"\n"}I enjoy building projects that merge art and logic, whether
-            through Unreal Engine gameplay systems, Unity prototypes, or
-            data-driven design.
+            During my undergraduate, I have immersed myself in the world of
+            computationa media, exploring different medium's impact to people,
+            especially in the fields like emotional design and interactive
+            storytelling. Where I discovered my passion for creating meaningful
+            immersive digital experiences that could inspire and connect people.
+            {"\n"}
+            That's the reason I turned to game development — a field that
+            perfectly blends creativity, technology, and human experience.
+            {"\n"}I enjoy building projects that merge art and feelings, whether
+            through Unreal Engine or Unity.
             {"\n"}I believe in crafting digital worlds that are not only
             visually engaging but also emotionally resonant and human-centered.
           </p>
@@ -455,10 +462,9 @@ function About() {
           left="Tencent"
           right="May 2025-Jul. 2025\Guangzhou, China"
           position="Software Development Intern"
-          body="▪	Designed and packaged a modular social SDK using JavaScript and WeChat APIs with reusable components and UI templates that enabled 200+ studios to integrate PvP/one-go features, reducing average launch time by two weeks.
-          ▪	Developed and deployed 3 casual games with Unity and JavaScript, serving 5M+ active players with real-time competition features and responsive UI/UX across WeChat instant game platform. 
-          ▪	Built automated ETL pipelines with Python and SQL to process player behavior data, created interactive Tableau dashboards for DAU/ROI analysis, identified key engagement patterns that improved retention by 25%. 
-          ▪	Collaborated across frontend and backend teams using Git, Jira, Agile workflows across the full software lifecycle"
+          body="▪ Launched a modular social SDK using JavaScript and WeChat APIs, with reusable components and UI templates that enabled 200+ studios to integrate PvP/co-op features, reducing average launch time by two weeks
+          ▪ Built automated ETL pipelines with Python and SQL to process player behavior data, created interactive Tableau dashboards for DAU/ROI analysis, identified key engagement patterns that improved retention by 25%
+          ▪ Developed 3 game products with Unity and JavaScript, with the help across frontend and backend teams using Git, Jira, Agile workflows, successfully published for inner group testing"
         />
         <CvRow
           left="Game Square"
@@ -621,12 +627,14 @@ function ArticlePage({
 
               {/* 链接单独一行 */}
               {it.link && (
-                <NavLink
-                  to={it.link}
+                <a
+                  href={it.link}
+                  target={it.link.startsWith("http") ? "_blank" : "_self"}
+                  rel="noreferrer"
                   style={{ display: "inline-block", marginTop: 6 }}
                 >
                   View →
-                </NavLink>
+                </a>
               )}
             </div>
           );
@@ -801,7 +809,7 @@ function PhotoSection({
   title: string;
   desc?: string;
   images: string[];
-  bg?: string; // 可选渐变背景
+  bg?: string;
 }) {
   return (
     <section
@@ -1061,9 +1069,9 @@ const globalCss = `
   break-inside: avoid;
   margin-bottom:24px;
   overflow:hidden;
-  border-radius:0 !important;   /* 没有圆角 */
-  box-shadow:none !important;   /* 没有阴影 */
-  border:none !important;       /* 没有边框 */
+  border-radius:0 !important; 
+  box-shadow:none !important; 
+  border:none !important;    
 }
 .masonry-item img{
   width:100%;
@@ -1071,7 +1079,7 @@ const globalCss = `
   height:auto;
   border:none !important;
   box-shadow:none !important;
-  border-radius:0 !important;   /* 图片本身也无圆角 */
+  border-radius:0 !important;   
 }
 
 `;
