@@ -169,31 +169,31 @@ function Game() {
 function Website() {
   return (
     <ArticlePage
-      title="Website Development"
+      title="Wb Website Development"
       desc="..."
       items={[
         {
-          title: "Ech8",
-          img: "/images/ech8.jpg",
+          title: "This World Abandoned Me",
+          img: "/images/thisworld.png",
           text: "Language-based puzzle…",
-          link: "/game/ech8",
+          link: "/thisworldabandonedme/index.html",
         },
         {
-          title: "WitchAlchemy",
-          img: "/images/witchalchemy.jpg",
+          title: "Wu Xing",
+          img: "/images/wuxing.png",
           text: "Tarot-inspired alchemy…",
           link: "/game/witchalchemy",
           side: "right",
         },
         {
-          title: "CryRec",
-          img: "/images/cryrec.jpg",
+          title: "Haizi's Poetry",
+          img: "/images/haizi.png",
           text: "Emotional journaling app…",
           link: "/game/cryrec",
         },
         {
-          title: "Planet Wars Agent",
-          img: "/images/planetwars.jpg",
+          title: "Laying out Layouts",
+          img: "/images/layin.png",
           text: "Kotlin greedy agent…",
           link: "/game/planetwars",
         },
