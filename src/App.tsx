@@ -143,14 +143,14 @@ function Game() {
           link: "/game/ech8",
         },
         {
-          title: "WitchAlchemy",
+          title: "Witch Kitchen",
           img: "/images/witchalchemy.jpg",
           text: "Tarot-inspired alchemy…",
           link: "/game/witchalchemy",
           side: "right",
         },
         {
-          title: "CryRec",
+          title: "Tarot Cards",
           img: "/images/cryrec.jpg",
           text: "Emotional journaling app…",
           link: "/game/cryrec",
@@ -160,6 +160,18 @@ function Game() {
           img: "/images/planetwars.jpg",
           text: "Kotlin greedy agent…",
           link: "/game/planetwars",
+        },
+        {
+          title: "The Dinner",
+          img: "/images/cryrec.jpg",
+          text: "Emotional journaling app…",
+          link: "/game/cryrec",
+        },
+        {
+          title: "Bubble Tea",
+          img: "/images/cryrec.jpg",
+          text: "Emotional journaling app…",
+          link: "/game/cryrec",
         },
       ]}
     />
@@ -368,11 +380,20 @@ function About() {
         }}
       >
         <div>
-          <p style={styles.bodyText}>
-            We nurture the future of ballet — a space where movement transcends
-            the ordinary and the pursuit of excellence celebrates every dancer’s
-            potential.
+          <p style={{ ...styles.bodyText, whiteSpace: "pre-line" }}>
+            I’m Xinzhe Jiang. A cross-disciplinary developer and designer
+            passionate about creating immersive, meaningful digital experiences
+            that connect people and inspire emotion.
+            {"\n"}
+            My background bridges game development, interactive storytelling,
+            and product strategy — blending creativity with technical precision.
+            {"\n"}I enjoy building projects that merge art and logic, whether
+            through Unreal Engine gameplay systems, Unity prototypes, or
+            data-driven design.
+            {"\n"}I believe in crafting digital worlds that are not only
+            visually engaging but also emotionally resonant and human-centered.
           </p>
+
           <div style={{ display: "flex", gap: 16, marginTop: 18 }}>
             <a
               href="/images/XinzheJiang_Resume_SWE.pdf"
@@ -388,12 +409,12 @@ function About() {
         <div
           style={{
             display: "flex",
-            justifyContent: "flex-end", // ✅ 靠右对齐
+            justifyContent: "flex-end",
           }}
         >
           <div
             style={{
-              width: 220, // ✅ 固定宽高成正方形
+              width: 220,
               height: 220,
               borderRadius: 6,
               backgroundImage: "url('/images/MyPhoto25.jpeg')",
@@ -713,7 +734,6 @@ function CvRow({
   position?: string;
   body?: string;
 }) {
-  // 兼容换行符或反斜杠作为分隔符
   let date = "";
   let location = "";
   if (right) {
@@ -754,7 +774,7 @@ function CvRow({
           <div
             style={{
               ...styles.cvBody,
-              whiteSpace: "pre-line", // ✅ 关键：支持换行符
+              whiteSpace: "pre-line",
               marginTop: 6,
             }}
           >
@@ -821,10 +841,10 @@ function GameDetail({ id }: { id: string }) {
   const gameData: Record<string, any> = {
     ech8: {
       title: "Ech8 – Language-Based Puzzle Game",
-      desc: "Ech8 is a linguistic puzzle game developed in Unreal Engine 5 that explores communication through symbolic grammar. The player learns an alien language through puzzles that teach syntax, emotion, and tone.",
+      desc: "Ech8 is a scifi based puzzle game developed in Unreal Engine 5 that explores communication through symbolic grammar. The player learns an alien language through puzzles and decipher alien civilization. Developed using a hybrid of C++ and Blueprints.",
       steps: [
         {
-          text: "1️⃣ **Concept & Narrative Design** — Built a symbolic language system inspired by linguistics and semiotics. Each puzzle reveals a new layer of communication.",
+          text: "Concept & Narrative Design — Built a symbolic language system inspired by linguistics and semiotics. Each puzzle reveals a new layer of communication.",
           img: "/images/ech8_dev/ech8_concept.jpg",
         },
         {
@@ -838,8 +858,8 @@ function GameDetail({ id }: { id: string }) {
       ],
     },
     witchalchemy: {
-      title: "WitchAlchemy – Tarot-Inspired Alchemy Game",
-      desc: "WitchAlchemy is a mystical alchemy game where players combine tarot cards to create potions and spells. Developed with Unity and C#, the game features an enchanting art style and immersive gameplay.",
+      title: "Witch Kitchen - Cooking Alchemy Game",
+      desc: "Witch Kitchen is a mystical alchemy game where players combine different ingredients to cook courses in the witch world. Developed with UE5 and C++, the game features an enchanting art style and immersive gameplay.",
       steps: [
         {
           text: "🔮 **Card System Design** — Created a modular tarot card system with unique attributes and effects.",
@@ -980,6 +1000,8 @@ const styles: { [k: string]: React.CSSProperties } = {
   bodyText: {
     color: "#3f3f3f",
     maxWidth: 700,
+    // allow embedded newlines ("\n") in strings to render as line breaks
+    whiteSpace: "pre-line",
   },
   gallery: {
     display: "grid",
@@ -1035,7 +1057,6 @@ const globalCss = `
 @media (max-width:1100px){ .masonry{ column-count:2; } }
 @media (max-width:700px){ .masonry{ column-count:1; } }
 
-/* ✅ 去除圆角 & 阴影 */
 .masonry-item{
   break-inside: avoid;
   margin-bottom:24px;
