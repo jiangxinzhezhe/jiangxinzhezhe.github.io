@@ -169,7 +169,7 @@ function Game() {
 function Website() {
   return (
     <ArticlePage
-      title="Wb Website Development"
+      title="Website Development"
       desc="..."
       items={[
         {
