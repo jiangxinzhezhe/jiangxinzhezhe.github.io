@@ -1,0 +1,273 @@
+/* 
+SCSS RGB 
+$black: rgba(8, 7, 5, 1);
+$dark-red: rgba(146, 20, 12, 1);
+$alabaster: rgba(236, 235, 228, 1);
+$cadet: rgba(93, 115, 126, 1);
+$xanadu: rgba(114, 125, 113, 1);
+*/
+
+
+@font-face {
+  font-family: plas;
+  src: url(../fonts/plasdrip.ttf);
+}
+
+footer{
+  text-align: center;
+  color: rgba(236, 235, 228, 0.5);
+  font-weight: 1px;
+  line-height: 8px;
+  font-family: serif;
+}
+
+#mail{
+  text-decoration: none;
+  color: rgba(236, 235, 228, 0.5);
+}
+
+h1{
+  text-align: center; 
+  color:rgba(236, 235, 228, 1);
+  font-size: 70px;
+  font-family: plas;
+  letter-spacing: 5px;
+  line-height: 2;
+}
+
+body {
+    background-color: rgba(8, 7, 5, 1) ;
+    font-family: plas;
+  }
+
+.link{
+  text-decoration: none;
+  color: rgba(146, 20, 12, 1);
+}
+
+.pic{
+  position: relative;
+  z-index: -1;
+}
+
+/*chain page---------------------------*/
+#chain{
+  font-size: 100px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+#chainpic{
+  width: 1440px;
+  height: 900px;
+  margin-top: -500px;
+}
+
+/*teeth page---------------------------*/
+
+
+#teethpic{
+  width: 720px;
+  height: 450px;
+  margin-left: 150px;
+  margin-top: -250px;
+}
+
+#blood{
+  font-size: 100px;
+}
+
+#hell{
+  font-size: 150px;
+  margin: 0;
+}
+
+#cold{
+  font-size: 100px;
+}
+
+#deaths{
+  font-size: 100px;
+}
+
+#bloodpic{
+  width:  2160px;
+  height: 1215px;
+  margin-left: -600px;
+  margin-top: -1150px;
+  opacity: 0.5;
+}
+
+#topicpic{
+  width: 1440px;
+  height: 900px; 
+  margin-left: 50px;
+  margin-top: -700px;
+  opacity: 0.45;
+}
+
+#handpic{
+  width: 1440px;
+  height: 900px; 
+  margin-left: -400px;
+  margin-top: -900px;
+}
+
+#teargif{
+  width: 1600px;
+  height: 900px;
+  margin-top: -900px;
+  margin-left: 0px;
+}
+
+#rteethpic{
+  width: 720px;
+  height: 450px;
+  margin-left: 150px;
+  margin-top: -350px;
+}
+
+#birthpic{
+  width: 1600px;
+  height: 900px;
+  margin-top: -9000px;
+  margin-left: 0px;
+}
+
+#buttom{
+  width: 144px;
+  height: 90px; 
+  margin-left: 0px;
+  margin-top: 0px;
+  opacity: 1;
+}
+
+
+
+/* Responsive
+------------------------------------*/
+ @media screen and (min-width:750px){
+  #topicpic{
+    width: 1440px;
+    height: 900px; 
+    margin-left: 50px;
+    margin-top: -700px;
+    opacity: 0.45;
+  }
+  #teeth{
+    font-size: 150px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+  }
+  /* header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  } */
+} 
+
+@media screen and (max-width:749px){
+  footer{
+    font-size: 10px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+  #topicpic{
+      width: 700px;
+      height: 400px; 
+      margin-left: -100px;
+      margin-top: -800px;
+      opacity: 0.45;
+      position: top center;
+  }
+  h1{
+    font-size: 50px;
+  }
+  #teeth{
+    font-size: 80px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+  }
+  #teethpic{
+    width: 350px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: -50px;
+  }
+  #chain{
+    font-size: 80px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+  }
+  #chainpic{
+    width: 700px;
+    height: 400px;
+    margin-top: -500px;
+  }
+  #blood{
+    font-size: 70px;
+    height: 20px;
+    letter-spacing: 20px;
+    line-height: 20px;
+  }
+  #bloodpic{
+    width:  840px;
+    height: 480px;
+    margin-left: -350px;
+    margin-top: -500px;
+    opacity: 0.5;
+  }
+  #hell{
+    font-size: 100px;
+    margin: 0;
+    line-height: 150px;
+    letter-spacing: 20px;
+  }
+  #handpic{
+    width: 1440px;
+    height: 900px; 
+    margin-left: -600px;
+    margin-top: -800px;
+  }
+#cold{
+  font-size: 50px;
+}
+#teargif{
+  width: 800px;
+  height: 450px;
+  margin-top: -350px;
+  margin-left: -250px;
+}
+#deaths{
+  font-size: 80px;
+}
+#rteethpic{
+  width: 500px;
+  height: 300px;
+  margin-left: 40px;
+  margin-top: -100px;
+}
+#birthpic{
+  width: 700px;
+  height: 500px;
+  margin-top: -300px;
+  margin-left: 0px;
+}
+}

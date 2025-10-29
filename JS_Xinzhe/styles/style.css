@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: zmx;
+    src: url(../font/ZhiMangXing-Regular.ttf); 
+  }
+  @font-face {
+    font-family: edo;
+    src: url(../font/edo.ttf);
+  }
+#yinyang{
+    position: middle;
+    margin-top: 80px;
+    margin-left: 30px;
+    transition:2s ease-in-out;
+}
+#yinyang:hover{
+    rotate: 6.2836rad;
+  }
+#page_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 80px;
+    grid-column-gap: 80px;
+    grid-row-gap: 80px; 
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+#cwu{
+    font-family: zmx;
+    font-size: 300px;
+    grid-column: 1/2;
+    grid-row: 1;
+    margin-top: 40px;
+}
+#cxing{
+    font-family: zmx;
+    font-size: 300px;
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 40px;
+}
+#ewu{
+    font-family: edo;
+    grid-column: 1/2;
+    grid-row: 2;
+    margin-top: -180px;
+}
+#exing{
+    font-family: edo;
+    grid-column: 3;
+    grid-row: 2;
+    margin-top: -180px;
+}
+h1{
+    font-size: 160px;
+}
+
+footer{
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 3px; 
+    margin-top: -80px;
+    margin-bottom: 1rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#yearofbirth{
+    font-family: serif;
+    grid-column: 1;
+    font-size: 50px;
+}
+#form_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 5em;
+    grid-row-gap: 5em;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 10em;
+}
+#input{
+    grid-column: 2;
+}
+#calculator{
+    grid-column: 1;
+    font-size: 30px;
+    font-family: serif;
+}
+#ref{
+    grid-column: 2;
+    font-size: 30px;
+    font-family: serif;
+}
+#wuxing_yinyang{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition:2s ease-in-out;
+}
+#wuxing_yinyang:hover{
+    rotate: 6.2836rad;
+  }
+#content{
+    text-align: center;
+    font-family: zmx;
+    font-size: 60px;
+    margin-top: 80px;
+}
+#calculator, #ref{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+#calculator:hover,#ref:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+#wuxingfooter{
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 3px; 
+    margin-bottom: 50px;
+    margin-top: 150px;
+}

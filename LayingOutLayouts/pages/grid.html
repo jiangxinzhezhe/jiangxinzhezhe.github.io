@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <meta name="author" content ="your name">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CSS Grid</title>
+        <link href="../styles/style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html" id="home">Laying Out Layouts</a>
+                <a href="./box.html" id="cssbox">CSS Box Model</a>
+                <a href="./float.html" id="floats">Floats</a>
+                <a href="./flexbox.html" id="flexbox">Flexbox</a>
+                <a href="./grid.html" id="cssgrid">CSS Grid</a>
+            </nav>
+        </header>
+
+        <main id="boxmodelpage_grid">
+            <article>
+                <img id="gridimage1" src="../images/grid_columns.png" alt="grid cloumns" width="400" height="350"/>
+            </article>
+            <article id="gridtext">
+                <h3>Grid Cloumns</h3>
+            </article>
+            <article id="gridtext">
+                <h3>Grid Rows</h3>
+            </article>
+            <article>
+                <img id="gridimage2" src="../images/grid_rows.png" alt="grid rows" width="400" height="300"/>
+            </article>
+            <article>
+                <img id="gridimage3" src="../images/grid_gaps.png" alt="grid gaps" width="400" height="300"/>
+            </article>
+            <article id="gridtext">
+                <h3>Grid Gaps</h3>
+            </article>
+            <article id="gridtext">
+                <h3>Grid Lines</h3>
+            </article>
+            <article>
+                <img id="gridimage4" src="../images/grid_lines.png" alt="grid lines" width="400" height="300"/>
+            </article>
+            <article>
+                <img id="gcolumn" src="../images/gcolumn.png" alt="grid columns" width="400" height="240"/>
+            </article>
+            <article id="gridexp1">
+                <h3>The grid-template-columns Property</h3>
+                <p>
+                    The grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column.<br>
+                    The value is a space-separated-list, where each value defines the width of the respective column.<br>
+                    If you want your grid layout to contain 4 columns, specify the width of the 4 columns, or "auto" if all columns should have the same width.<br>
+                </p>
+            </article>
+            <article id="gr">
+                <h3>Grid Rows<br></h3>
+                    <p>.grid-container {
+                        display: grid;
+                        grid-template-rows: 80px 200px;
+                      }</p>
+            </article>
+            <article>
+                <img id="gridimage2" src="../images/grow.png" alt="grid rows" width="400" height="180"/>
+            </article>
+            <article>
+                <img id="gridcolumn2" src="../images/gcol2.png" alt="grid column" width="400" height="180"/>
+            </article>
+            <article margin-top="-1rem">
+                <h3>Grid-Cloumn<br></h3>
+                    <p>The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties.<br>
+                        .item1 {
+                            grid-column: 1 / 5;
+                          }<br>
+                          .item1 {
+                            grid-row: 1 / span 4;
+                          }</p>
+            </article>
+            <article id="gr" margin-top="-1rem">
+                <h3>Grid-Row<br></h3>
+                    <p>The grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties.<br>
+                        .item1 {
+                            grid-row: 1 / 4;
+                          }<br>
+                          .item1 {
+                            grid-row: 1 / span 3;
+                          }</p>
+            </article>
+            <article>
+                <img id="gridrow2" src="../images/grow2.png" alt="grid row" width="400" height="180"/>
+            </article>
+
+            <article>
+                <img id="gridrow2" src="../images/grid3.png" alt="grid area" width="400" height="250"/>
+            </article>
+            <article margin-top="1rem">
+                <h3>The grid-area Property<br></h3>
+                    <p>The grid-area property can be used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties.<br>
+                        .item8 {
+                            grid-area: 1 / 2 / 5 / 6;
+                          }<br>
+                          .item8 {
+                            grid-area: 1 / 2 / span 4 / span 4;
+                          }</p>
+            </article>
+
+            <article margin-top="1rem">
+                <h3>Naming Grid Items<br></h3>
+                    <p>The grid-area property can also be used to assign names to grid items.<br>
+                        .item1 {
+                            grid-area: myArea;
+                          }<br>
+                          .grid-container {
+                            display: grid;
+                            grid-template-areas: 'myArea myArea . . .';
+                          }</p>
+            </article>
+            <article>
+                <img id="gridrow2" src="../images/grid4.png" alt="naming grid area" width="650" height="250"/>
+            </article>
+        </main>
+
+        <footer id="footer">
+            <p>Laying Out Layouts</p>
+            <p>&copy; 2022</p>
+            <a href="mailto:jiangxinzhezhe@outlook.com" id="mail">jiangxinzhezhe@outlook.com</a>
+        </footer>
+    </body>
+</html>

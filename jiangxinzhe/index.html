@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="en" dir="ltr">
+    <meta name="author" content ="Xinzhe Jiang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xinzhe Jiang</title>
+    <link href="style/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+        <header>
+            <nav id="indexnav">
+                <ul id="nav-links">
+                    <li id="home"><a href="index.html">Xinzhe Jiang</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="pages/resume.html">Resume</a></li>
+                    <li ><a href="mailto:jiangxinzhezhe@outlook.com" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header> 
+
+    <main id="mainpage_grid">
+        <div id="hi">
+            <p style="font-size: 20px;" id="gre">Hi, I am</p>
+            <h1 id="name">Xinzhe</h1>
+            <h1 id="name">Jiang</h1>
+            <a href="pages/portfolio.html"><p id="talk">Let's Talk --></p></a>
+            <a href="https://www.linkedin.com/in/xinzhejiang" ><img src="images/linkedin.png" alt="mylinkedin" id="ly"></a>
+        </div>
+        <img id="indexphoto" src="images/GeorgiaJiang_NoBG.png" alt="Xinzhe Jiang Photo"/>
+        <div>
+            <h2  id="intro">Game Designer</h2>
+            <h2  id="intro">Photographer</h2>
+            <h2  id="intro">Director</h2>
+            <p id="aboutme">
+                I am a MEng student in Game Design at Duke  University. <br>
+                I aspire to combine technical artistry and game design to create immersive experiences that blend creativity with strategic production, enhancing communication, societal impact, and cultural depth.
+            </p>
+            <a href="images/XinzheJiang_Resume.pdf"><button id="downloadcv">Download CV</button></a>
+        </div>
+    </main>
+
+    <article id="latest">
+        <h1 id="latestport">Latest Portfolio</h1>
+        <p id="latestintro" style="font-size: 20px; margin-left: 150px; opacity: 0.7; line-height: 40px;">Scoll to see my recent projects.</p>
+        <section id="latestportfolio">
+            <div>
+                <div class="ppp" id="image_popup">
+                    <button id="close-btn" onclick="closePopup()">X</button><br>
+                    <img id="large-image" src="images/StreetSH/street_6.jpg" alt="street" >
+                </div>
+                <div class="ppp" id="image2_popup">
+                    <button id="close-btn" onclick="closePopup2()">X</button><br>
+                    <img id="large-image" src="images/StreetSH/street_5.jpg" alt="street" >
+                </div>
+                <div class="ppp" id="image3_popup">
+                    <button id="close-btn" onclick="closePopup3()">X</button><br>
+                    <img id="large-image" src="images/StreetSH/street_10.jpg" alt="street" >
+                </div>
+                <div class="ppp" id="builder_popup">
+                    <button id="close-btn" onclick="closePopup1()">X</button><br>
+                    <img id="large-image" src="images/Builder_2/Builder_1.jpg" alt="Builder" style="width: 900px;" >
+                </div>
+                <div class="ppp" id="builder2_popup">
+                    <button id="close-btn" onclick="closePopup4()">X</button><br>
+                    <img id="large-image" src="images/Builder_2/Builder_10.jpg" alt="Builder" style="width: 900px;" >
+                </div>
+                <div class="ppp" id="builder3_popup">
+                    <button id="close-btn" onclick="closePopup5()">X</button><br>
+                    <img id="large-image" src="images/Builder_1/builder_2.jpg" alt="Builder" style="width: 600px;" >
+                </div>
+                <div class="ppp" id="builder4_popup">
+                    <button id="close-btn" onclick="closePopup6()">X</button><br>
+                    <img id="large-image" src="images/Builder_1/builder_4.jpg" alt="Builder" style="width: 600px;" >
+                </div>
+                
+                
+                <div class="slider-wrap" id="photography">
+                    <div class="container">
+                        <img class="img" src="images/StreetSH/street_6.jpg" alt="street" width="340px" onclick="myFunction()"/>
+                    </div>
+                    <div class="container">
+                        <img class="img" src="images/StreetSH/street_5.jpg" alt="street" width="340px" onclick="myFunction2()"/>
+                    </div>
+                    <div class="container">
+                        <img class="img" src="images/StreetSH/street_10.jpg" alt="street" width="340px" onclick="myFunction3()"/>
+                    </div>
+
+
+                    <div class="container">
+                        <img class="img" src="images/Builder_2/Builder_1.jpg" alt="Builder" width="340px" onclick="builderFunc1()"/>
+                    </div>
+                    <div class="container">
+                        <img class="img" src="images/Builder_2/Builder_10.jpg" alt="Builder" width="340px" onclick="myFunction4()"/>
+                    </div>
+                    <div class="container">
+                        <img class="img" src="images/Builder_1/builder_2.jpg" alt="Builder" width="340px" onclick="builderFunc5()"/>
+                    </div>
+                    <div class="container">
+                        <img class="img" src="images/Builder_1/builder_4.jpg" alt="Builder" width="340px" onclick="builderFunc6()"/>
+                    </div>
+
+                </div>
+                <img class="icon" id="camera" src="images/camera.png" alt="camera.png" height="28px" style="margin-left: 20px; margin-top: -20px;">
+                <h2 style="margin-left: 20px;margin-top: 10px;">Photography</h2>
+            </div>
+            <div>
+                <div class="slider-wrap" id="video">
+                    <video width="400" controls>
+                        <source src="images/Rural_Christian/Rural_C_press.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                    <video width="400" controls>
+                        <source src="images/city_sounds_scape_suzhou/suzhou_live_press.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                    <video width="400" controls>
+                        <source src="images/Tangsong/tangsong_press.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <img class="icon" id="camera" src="images/star.png" alt="camera.png" height="30px" style="margin-left: 20px; margin-top: -20px;">
+                <h2 style="margin-left: 20px;margin-top: 10px;">Video</h2>
+            </div>
+            <div>
+                <div class="slider-wrap" id="website">
+                    <a href="https://jiangxinzhezhe.github.io/thiswordabandonedme/index.html"><img src="images/surfacethisword.png" alt="thiswordabandonedme" width="340px"/> </a>
+                    <a href="https://jiangxinzhezhe.github.io/firstassign/index.html">
+                    <img src="images/surfacehaizi.png" alt="haiziweb" width="340px"/></a>   
+                    <a href="https://jiangxinzhezhe.github.io/JS_Xinzhe/index.html"><img src="images/wuxingsurface.png" alt="wuxing" width="340px"/> </a>
+                    <a href="https://jiangxinzhezhe.github.io/LayingOutLayouts/index.html"><img src="images/layingsurface.png" alt="layingout" width="340px"/> </a>
+                </div>
+                <img class="icon" id="camera" src="images/web.png" alt="camera.png" height="35px" style="margin-left: 20px; margin-top: -20px;">
+                <h2 style="margin-left: 20px; margin-top: 10px;">Websites</h2>
+            </div>
+            <p id="verti">Xinzhe Jiang</p>
+        </section>
+    </div>
+    
+    </article>
+
+    <footer id="footer">
+        <h1 id="footcontact">Contact Me</h1>
+        <div id="media">
+            <a href="https://twitter.com/jiang_xinzhe"><img src="images/twitter.png" height=35px></a>
+            <a href="https://www.instagram.com/jiangxinzhezhe/"><img src="images/ins.png" height=35px style="margin-left: 25px; margin-right: 25px;"></a>
+            <a href="mailto:jiangxinzhezhe@outlook.com"><img src="images/mail.png" height=35px></a>
+        </div>
+        <p>&copy; 2024 <a href="mailto:jiangxinzhezhe@outlook.com" id="mail"><b style="color: #ffffffff;">Xinzhe Jiang</b></a></p>
+    </footer>
+</body>
+
+<script src="scripts/personalweb.js"></script>
+</html>

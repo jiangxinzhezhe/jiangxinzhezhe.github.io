@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <meta name="author" content ="your name">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flexbox</title>
+        <link href="../styles/style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html" id="home">Laying Out Layouts</a>
+                <a href="box.html" id="cssbox">CSS Box Model</a>
+                <a href="float.html" id="floats">Floats</a>
+                <a href="flexbox.html" id="flexbox">Flexbox</a>
+                <a href="grid.html" id="cssgrid">CSS Grid</a>
+            </nav>
+        </header>
+
+        <main id="boxmodelpage_grid">
+            <article id="flexcontainer">
+                <h3>Flex Container</h3>
+                <p>
+                    this is a flex container (the blue area) with three flex items<br>
+                    The flex container becomes flexible by setting the display property to flex:<br>
+                    {display: flex;}<br>
+                </p>
+            </article>
+            <article>
+                <img id="fleximage1" src="../images/flex1.png" alt="box example" width="600" height="150"/>
+            </article>
+            
+            <article>
+                <img id="fleximage2" src="../images/flex2.png" alt="box example" width="600" height="130"/>
+            </article>
+            <article id="flexitems">
+                <h3>Flex Items</h3>
+                <p>
+                    The direct child elements of a flex container automatically becomes flexible (flex) items.<br>
+                    The element above represents four blue flex items inside a grey flex container.<br>
+                </p>
+            </article>
+
+            <article id="responsive">
+                <h3>Flex Responsive</h3>
+                <p>
+                    if you want to create a two-column layout for most screen sizes, and a one-column layout for small screen sizes (such as phones and tablets), you can change the flex-direction from row to column at a specific breakpoint (800px in the example)<br>
+                    @media (max-width: 800px) {
+                        .flex-container {
+                          flex-direction: column;}<br>
+                </p>
+            </article>
+            <article>
+                <img id="responsiveimg" src="../images/responsive.png" alt="responsive example" width="650" height="500"/>
+            </article>
+        </main>
+
+        <footer id="footer">
+            <p>Laying Out Layouts</p>
+            <p>&copy; 2022</p>
+            <a href="mailto:jiangxinzhezhe@outlook.com" id="mail">jiangxinzhezhe@outlook.com</a>
+        </footer>
+    </body>
+</html>

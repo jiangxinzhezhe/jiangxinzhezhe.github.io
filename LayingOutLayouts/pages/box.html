@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <meta name="author" content ="your name">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CSS Box Model</title>
+        <link href="../styles/style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html" id="home">Laying Out Layouts</a>
+                <a href="box.html" id="cssbox">CSS Box Model</a>
+                <a href="float.html" id="floats">Floats</a>
+                <a href="flexbox.html" id="flexbox">Flexbox</a>
+                <a href="grid.html" id="cssgrid">CSS Grid</a>
+            </nav>
+        </header>
+
+        <main id="boxmodelpage_grid">
+            <article>
+                <img id="boximage" src="../images/box-model.png" alt="box example" width="400" height="200"/>
+            </article>
+
+            <article id="explain">
+                <h3>Width & Calculation</h3>
+                <p>
+                    The total width of an element should be calculated like this:<br>
+                    Total element width = width + left padding + right padding + left border + right border + left margin + right margin<br>
+                    The total height of an element should be calculated like this:<br>
+                    Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin<br>
+                </p>
+            </article>
+
+            <article id="examplewithtext">
+                <h3>Example</h3>
+                <img class="example_image1" src="../images/box1.png" alt="box example" width="600" height="500"/>
+                <img class="example_image2" src="../images/box2.png" alt="box example" width="600" height="500"/>
+            </article>
+
+            <article id="task">
+                <h3>Tasks</h3>
+                <li class="task_list">Change width to 350px</li>
+                <li class="task_list">Change border to 20px</li>
+                <li class="task_list">Change padding to 0px</li>
+                <li class="task_list">Change maigin to 10 px</li>
+            </article>
+
+            <article id="answer">
+                <h3>Answer</h3>
+                <img class="example_image3" src="../images/box3.png" alt="box example" width="600" height="500"/>
+                <img class="example_image4" src="../images/box4.png" alt="box example" width="600" height="500"/>
+            </article>
+        </main>
+
+        <footer id="footer">
+            <p>Laying Out Layouts</p>
+            <p>&copy; 2022</p>
+            <a href="mailto:jiangxinzhezhe@outlook.com" id="mail">jiangxinzhezhe@outlook.com</a>
+        </footer>
+    </body>
+</html>

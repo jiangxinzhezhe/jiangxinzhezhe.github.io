@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="en" dir="ltr">
+    <meta name="author" content ="Xinzhe Jiang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WuXing Test</title>
+    <link href="../styles/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<style>
+    #jin {
+        display: none;
+    }
+    #mu {
+        display: none;
+    }
+    #shui {
+        display: none;
+    }
+    #huo {
+        display: none;
+    }
+    #tu {
+        display: none;
+    }
+    body {
+          background-image: url("../images/bgcolor.png");
+          background-repeat: repeat;
+        }
+</style>
+
+<body>
+    <form id="form" onsubmit="event.preventDefault();">
+        <article id="form_grid">
+            <label id="yearofbirth"> Year Of Birth </label><input type="text" name="year" id="input" placeholder="Year of Birth.."><br>
+            <button id="calculator" onclick="show()">Calculate</button>
+            <button id="ref" onclick="refresh()">Test Another Person</button>
+        </article>
+        <a href="../index.html"><img id="wuxing_yinyang" src="../images/yinyang.svg.webp" alt="yinyang image" height="100px"/></a>
+    </form>
+    <div id = "content"></div>
+    <img id="jin" src="../images/jin.png" alt="jin image" height="600px"/>
+    <img id="mu" src="../images/mu.png" alt="mu image" height="600px"/>
+    <img id="shui" src="../images/shui.png" alt="shui image" height="600px"/>
+    <img id="huo" src="../images/huo.png" alt="huo image" height="600px"/>
+    <img id="tu" src="../images/tu.png" alt="tu image" height="600px"/>
+
+
+
+    <script type="text/javascript">
+        const tg = {0:'庚 (geng)', 1:'辛 (xin)', 2:'壬 (ren)', 3:'癸 (gui)', 4:'甲 (jia)', 5:'乙 (yi)', 6:'丙 (bing)', 7:'丁 (ding)', 8:'戊 (we)', 9:'己 (ji)'}, 
+        dz={0:'申 (shen)', 1:'酉 (you)', 2:'戌 (xu)', 3:'亥 (hai)', 4:'子 (zi)', 5:'丑 (chou)', 6:'寅 (yin)', 7:'卯 (mao)', 8:'辰 (chen)', 9:'巳 (si)', 10:'午 (wu)', 11:'未 (wei)'};
+
+        function wuxing() {
+           let form = document.getElementById("form");
+           let year = form.elements.namedItem("year").value;
+ 
+           const tiangan = Object.values(tg)[year % 10]; 
+           const dizhi = Object.values(dz)[year % 12]; 
+           document.getElementById("content").innerHTML = "You Born in "+tiangan+" "+dizhi+ " Year"
+        }
+
+
+        function show() {
+            let form = document.getElementById("form");
+            let year = form.elements.namedItem("year").value;
+            let numtg=year%10
+            console.log("year"+year)
+            console.log("numtg"+numtg)
+
+            if(numtg==0 || numtg==1){
+                document.getElementById("jin").style.display = "block";
+                console.log("jin");
+            } else if (numtg==2 || numtg==3){
+                document.getElementById("shui").style.display = "block";
+                console.log("shui");
+            } else if (numtg==4 || numtg==5){
+                document.getElementById("mu").style.display = "block";
+                console.log("mu");
+            } else if (numtg==6 || numtg==7){
+                document.getElementById("huo").style.display = "block";
+                console.log("huo");
+            } else {
+                document.getElementById("tu").style.display = "block";
+                console.log("tu");
+            }
+        }
+
+        function refresh(){
+            window.location.reload("Refresh")
+        }
+
+
+       let submitBtn = document.getElementById("calculator");
+       submitBtn.addEventListener("click", wuxing);
+      
+   </script>
+    <footer id="wuxingfooter">
+        <p>Created by</p>
+        <p>&copy; 2022 Xinzhe Jiang</p>
+        <a href="mailto:jiangxinzhezhe@outlook.com" id="mail">jiangxinzhezhe@outlook.com</a>
+    </footer>
+</body>
+</html>
