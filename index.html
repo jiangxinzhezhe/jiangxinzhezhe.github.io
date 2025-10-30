@@ -13,11 +13,10 @@
 
 <script>
 (function () {
-  // 仅当没有 hash (#) 且也没被重定向过时执行
   if (!location.hash && !sessionStorage.getItem("redirected")) {
     sessionStorage.setItem("redirected", "1");
-    location.replace(location.pathname + location.search + "home/");
+    // 根路径 => /#/
+    location.replace(location.pathname + location.search + "#/");
   }
 })();
 </script>
-
