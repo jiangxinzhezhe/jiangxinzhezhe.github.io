@@ -12,10 +12,12 @@
 </html>
 
 <script>
-(function(l){
-  if (l.search[1]==='/'){
-    var decoded = l.search.slice(1).split('&').map(s=>s.replace(/~and~/g,'&')).join('?');
-    window.history.replaceState(null,null,decoded.slice(1)+l.hash);
+(function () {
+  // 仅当没有 hash (#) 且也没被重定向过时执行
+  if (!location.hash && !sessionStorage.getItem("redirected")) {
+    sessionStorage.setItem("redirected", "1");
+    location.replace(location.pathname + location.search + "home/");
   }
-}(window.location));
+})();
 </script>
+
