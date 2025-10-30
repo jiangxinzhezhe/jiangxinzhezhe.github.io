@@ -1,9 +1,10 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+// index.jsx / App.jsx
+import { HashRouter, Routes, Route, NavLink } from "react-router-dom";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,9 +26,37 @@ export default function App() {
         </Routes>
       </Layout>
       <style>{globalCss}</style>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
+
+// export default function App() {
+//   return (
+//     <BrowserRouter>
+//       <Layout>
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/game" element={<Game />} />
+//           <Route path="/game/ech8" element={<GameDetail id="ech8" />} />
+//           <Route
+//             path="/game/witchalchemy"
+//             element={<GameDetail id="witchalchemy" />}
+//           />
+//           <Route path="/game/cryrec" element={<GameDetail id="cryrec" />} />
+//           <Route
+//             path="/game/planetwars"
+//             element={<GameDetail id="planetwars" />}
+//           />
+//           <Route path="/website" element={<Website />} />
+//           <Route path="/documentary" element={<Documentary />} />
+//           <Route path="/playground" element={<Playground />} />
+//           <Route path="/about" element={<About />} />
+//         </Routes>
+//       </Layout>
+//       <style>{globalCss}</style>
+//     </BrowserRouter>
+//   );
+// }
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
