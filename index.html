@@ -10,3 +10,12 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
+<script>
+  (function () {
+    // 仅当没有 hash 时，自动跳到 #/
+    if (!location.hash) {
+      location.replace(location.pathname + location.search + '#/');
+    }
+  })();
+</script>

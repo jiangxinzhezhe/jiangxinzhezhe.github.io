@@ -23,6 +23,7 @@ export default function App() {
           <Route path="/documentary" element={<Documentary />} />
           <Route path="/playground" element={<Playground />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </Layout>
       <style>{globalCss}</style>
