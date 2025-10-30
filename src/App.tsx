@@ -1,6 +1,11 @@
 import React from "react";
 // index.jsx / App.jsx
-import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
 export default function App() {
   return (
