@@ -1,10 +1,15 @@
 import React from "react";
 // index.jsx / App.jsx
-import { HashRouter, Routes, Route, NavLink } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
 export default function App() {
   return (
-    <HashRouter>
+    <Router>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -27,7 +32,7 @@ export default function App() {
         </Routes>
       </Layout>
       <style>{globalCss}</style>
-    </HashRouter>
+    </Router>
   );
 }
 

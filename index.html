@@ -12,10 +12,10 @@
 </html>
 
 <script>
-  (function () {
-    // 仅当没有 hash 时，自动跳到 #/
-    if (!location.hash) {
-      location.replace(location.pathname + location.search + '#/');
-    }
-  })();
+(function(l){
+  if (l.search[1]==='/'){
+    var decoded = l.search.slice(1).split('&').map(s=>s.replace(/~and~/g,'&')).join('?');
+    window.history.replaceState(null,null,decoded.slice(1)+l.hash);
+  }
+}(window.location));
 </script>
