@@ -200,13 +200,13 @@ function Game() {
           title: "The Dinner",
           img: "/images/cryrec.jpg",
           text: "Emotional journaling app…",
-          link: "/game/cryrec",
+          link: "https://caitlynjiang.itch.io/the-dinner-20",
         },
         {
           title: "Bubble Tea",
           img: "/images/cryrec.jpg",
           text: "Emotional journaling app…",
-          link: "/game/cryrec",
+          link: "https://georgiajiang.itch.io/aikemilktea",
         },
       ]}
     />
@@ -887,16 +887,50 @@ function GameDetail({ id }: { id: string }) {
       desc: "Ech8 is a scifi based puzzle game developed in Unreal Engine 5 that explores communication through symbolic grammar. The player learns an alien language through puzzles and decipher alien civilization. Developed using a hybrid of C++ and Blueprints.",
       steps: [
         {
-          text: "Concept & Narrative Design — Built a symbolic language system inspired by linguistics and semiotics. Each puzzle reveals a new layer of communication.",
-          img: "/images/ech8_dev/ech8_concept.jpg",
+          img: "/images/echo/echobegin.jpg",
         },
         {
-          text: "2️⃣ **Mechanic Prototyping** — Implemented dynamic grammar parsing and response logic using Blueprint + C++ hybrid scripts.",
-          img: "/images/ech8_dev/ech8_blueprint.jpg",
+          text: "Start of game - Player crash lands on an alien planet and begins to explore the environment.",
+          img: "/images/echo/echobegin.gif",
         },
         {
-          text: "3️⃣ **UI & Dialogue System** — Designed modular UI components for lexicon visualization and contextual feedback.",
-          img: "/images/ech8_dev/ech8_ui.jpg",
+          text: "First mission - Player encounters fire and need to open doors and put out the fire",
+          img: "/images/echo/echofire.gif",
+        },
+        {
+          text: "First puzzle - Player learns numbers with interact with devices on the ship and solve the first puzzle.",
+          img: "/images/echo/echopuzzle.gif",
+        },
+        {
+          text: "Button Logic in Blueprints",
+          img: "/images/echo/echobutton.jpg",
+        },
+        {
+          img: "/images/echo/echopuzzle1.jpg",
+          img2: "/images/echo/echopuzzle2.jpg",
+        },
+        {
+          text: "More interactive devices for learning the alien language.",
+          img: "/images/echo/echopuzzle3.jpg",
+        },
+        {
+          text: "Lever Logic in Blueprints",
+          img: "/images/echo/echocode.jpg",
+        },
+        {
+          text: "Map Layout",
+          img: "/images/echo/echo_computer.png",
+        },
+        {
+          text: "Map Layout",
+          img: "/images/echo/echo_fire.png",
+        },
+        {
+          text: "On Developing - White Box Prototyping the alien spaceship.",
+          img: "/images/echo/echowhitebox1.jpg",
+        },
+        {
+          img: "/images/echo/echowhitebox2.jpg",
         },
       ],
     },
