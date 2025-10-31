@@ -1,8 +1,3 @@
-// 临时声明 Vite 的 import.meta
-interface ImportMeta {
-  env: Record<string, string>;
-}
-
 // src/utils/asset.ts
 export function asset(p: string) {
   const base = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
