@@ -173,40 +173,34 @@ function Game() {
       items={[
         {
           title: "Ech8",
-          img: "/images/ech8.jpg",
-          text: "Language-based puzzle…",
+          img: "/images/echo/echobegin.jpg",
+          text: "ECH8 is a narrative-based game that tells the story of a human explorer who accidentally enters the space station of an alien civilization and builds a connection with one of its beings. The game features gameplay that builds the world through the exploration of an alien language.",
           link: "/game/ech8",
         },
         {
-          title: "Witch Kitchen",
-          img: "/images/witchalchemy.jpg",
-          text: "Tarot-inspired alchemy…",
-          link: "/game/witchalchemy",
-          side: "right",
-        },
-        {
-          title: "Tarot Cards",
-          img: "/images/cryrec.jpg",
-          text: "Emotional journaling app…",
-          link: "/game/cryrec",
-        },
-        {
-          title: "Planet Wars Agent",
-          img: "/images/planetwars.jpg",
-          text: "Kotlin greedy agent…",
-          link: "/game/planetwars",
-        },
-        {
           title: "The Dinner",
-          img: "/images/cryrec.jpg",
-          text: "Emotional journaling app…",
+          img: "/images/dinner.png",
+          text: "Puzzle pieces float and fly around at random speeds, making it trickier with each level! Work together to align the pieces perfectly… or don’t, and enjoy the silly, cute surprises that unfold.",
           link: "https://caitlynjiang.itch.io/the-dinner-20",
         },
         {
           title: "Bubble Tea",
-          img: "/images/cryrec.jpg",
-          text: "Emotional journaling app…",
+          img: "/images/AikeMilktea.png",
+          text: "Get ready to slurp up some fun! In this game, you control your straw and tap the spacebar to drink as much bubbles as you can. Your challenge? Finish all the bubbles before the tea runs out! Drink quickly, keep track of your score, the clock is ticking—can you gulp your way to victory, or will the tea finish before you do?",
           link: "https://georgiajiang.itch.io/aikemilktea",
+        },
+        {
+          title: "Witch Kitchen",
+          img: "/images/alchemy.jpg",
+          text: "Run a witch's kitchen and brew magical potions by combining ingredients with unique properties. Experiment with different recipes to discover new effects and unlock hidden secrets in this enchanting alchemy game.",
+          link: "/game/witchalchemy",
+          side: "right",
+        },
+        {
+          title: "Planet Wars Agent",
+          img: "/images/Planet/planet.png",
+          text: "A competitive AI agent for the Planet Wars game, implemented in Kotlin. The agent uses greedy algorithms to optimize resource allocation and expansion strategies.",
+          link: "/game/planetwars",
         },
       ]}
     />
@@ -222,26 +216,26 @@ function Website() {
         {
           title: "This World Abandoned Me",
           img: "/images/thisworld.png",
-          text: "Language-based puzzle…",
+          text: "A web-based interective story telling that immerses users in the experience of human trafficking.",
           link: "/thiswordabandonedme/index.html",
         },
         {
           title: "Wu Xing",
           img: "/images/wuxing.png",
-          text: "Tarot-inspired alchemy…",
+          text: "Exploring the five elements of Chinese philosophy through an interactive web experience.",
           link: "/JS_Xinzhe/index.html",
           side: "right",
         },
         {
           title: "Haizi's Poetry",
           img: "/images/haizi.png",
-          text: "Emotional journaling app…",
+          text: "A digital archive and exploration of Haizi's poetry, featuring interactive elements and multimedia content.",
           link: "/firstassign/index.html",
         },
         {
           title: "Laying out Layouts",
           img: "/images/layin.png",
-          text: "Kotlin greedy agent…",
+          text: "A web project that demonstrates various CSS layout techniques and principles through interactive examples and explanations.",
           link: "/LayingOutLayouts/index.html",
         },
       ]}
@@ -258,32 +252,32 @@ function Documentary() {
         {
           title: "Rural Christian",
           img: "/images/rural.png",
-          text: "Language-based puzzle…",
+          text: "Having belief cannot be simply labeled as a good or bad thing. The meaning of having a belief can be different individually. The interviews display the reason for those elders' join, which seems understandable. And the objective footages lead the audience to consider those conflicts. Will those children in the documentary also believe in Christianity? Will religion develop in future China? The audiences will have their own answers to these questions.",
           link: "https://youtu.be/JzAs_COIm_4",
         },
         {
           title: "Tangsong",
           img: "/images/tangsong.png",
-          text: "Tarot-inspired alchemy…",
+          text: "Trailer for artist Tangsong's solo exhibition at Shanghai ART Gallery.",
           link: "https://youtu.be/dEAsleSQfuI",
           side: "right",
         },
         {
           title: "Suzhou LiveScene",
           img: "/images/suzhou.png",
-          text: "Emotional journaling app…",
+          text: "LiveScene is a new media art project that combines real-time data visualization with immersive audio-visual experiences. It captures the dynamic energy of Suzhou city through live feeds and transforms them into captivating digital art installations.",
           link: "https://youtu.be/zxNuqzcTB-I",
         },
         {
           title: "Dark Knight-UE5 Cinematics",
           img: "/images/darkknight.png",
-          text: "Kotlin greedy agent…",
+          text: "A cinematic trailer recreating the Dark Knight scene using Unreal Engine 5, showcasing advanced lighting and rendering techniques.",
           link: "https://youtu.be/AHPl2Plrmww",
         },
         {
           title: "Jazz Documentary Trailer",
           img: "/images/jazz.png",
-          text: "Kotlin greedy agent…",
+          text: "Jazz Documentary Trailer showcasing the vibrant world of jazz in Shanghai music and its cultural impact.",
           link: "https://youtu.be/sr3oCPKbob8",
         },
       ]}
@@ -294,6 +288,26 @@ function Documentary() {
 function Playground() {
   return (
     <main style={{ padding: "28px 0 64px" }}>
+      {/* Section 1: Street */}
+      <PhotoSection
+        title="2025"
+        desc="My 2025 Moments"
+        images={[
+          "/images/25/aus1.JPG",
+          "/images/25/aus2.JPG",
+          "/images/25/aus3.JPG",
+          "/images/25/sf1.JPG",
+          "/images/25/sf2.JPG",
+          "/images/25/y0.JPG",
+          "/images/25/y1.JPG",
+          "/images/25/y2.JPG",
+          "/images/25/y3.JPG",
+          "/images/25/y4.JPG",
+          "/images/25/y5.JPG",
+          "/images/25/y6.JPG",
+          "/images/25/y7.JPG",
+        ]}
+      />
       {/* Section 1: Street */}
       <PhotoSection
         title="Street"
@@ -939,26 +953,7 @@ function GameDetail({ id }: { id: string }) {
       desc: "Witch Kitchen is a mystical alchemy game where players combine different ingredients to cook courses in the witch world. Developed with UE5 and C++, the game features an enchanting art style and immersive gameplay.",
       steps: [
         {
-          text: "🔮 **Card System Design** — Created a modular tarot card system with unique attributes and effects.",
-          img: "/images/witchalchemy_dev/witchalchemy_cards.jpg",
-        },
-        {
-          text: "⚗️ **Alchemy Mechanics** — Developed potion crafting mechanics using C# scripts, allowing for dynamic combinations and outcomes.",
-          img: "/images/witchalchemy_dev/witchalchemy_mechanics.jpg",
-        },
-      ],
-    },
-    cryrec: {
-      title: "CryRec – Emotional Journaling App",
-      desc: "CryRec is a mobile app that encourages emotional expression through daily journaling prompts and mood tracking. Developed with React Native and Firebase backend.",
-      steps: [
-        {
-          text: "📱 Developed cross-platform mobile app with React Native.",
-          img: "/images/cryrec_dev/cryrec_app.jpg",
-        },
-        {
-          text: "🗄️ Built Firebase backend for secure data storage and user authentication.",
-          img: "/images/cryrec_dev/cryrec_firebase.jpg",
+          img: "/images/alchemy.gif",
         },
       ],
     },
@@ -967,12 +962,7 @@ function GameDetail({ id }: { id: string }) {
       desc: "A competitive AI agent for the Planet Wars game, implemented in Kotlin. The agent uses greedy algorithms to optimize resource allocation and expansion strategies.",
       steps: [
         {
-          text: "🤖 Designed greedy algorithm for resource management and expansion.",
-          img: "/images/planetwars_dev/pw_algorithm.jpg",
-        },
-        {
-          text: "💻 Implemented agent logic in Kotlin with efficient data structures.",
-          img: "/images/planetwars_dev/pw_kotlin.jpg",
+          img: "/images/Planet/planet.mov",
         },
       ],
     },
@@ -1021,7 +1011,7 @@ function GameDetail({ id }: { id: string }) {
 
       <div style={{ textAlign: "center", marginTop: 48 }}>
         <NavLink to="/game" style={{ textDecoration: "underline" }}>
-          ← Back to Game
+          ← Back to Games
         </NavLink>
       </div>
     </section>
