@@ -6,6 +6,8 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
+import Media from "./components/Media";
+import { asset } from "./utils/asset";
 
 export default function App() {
   return (
@@ -35,34 +37,6 @@ export default function App() {
     </Router>
   );
 }
-
-// export default function App() {
-//   return (
-//     <BrowserRouter>
-//       <Layout>
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/game" element={<Game />} />
-//           <Route path="/game/ech8" element={<GameDetail id="ech8" />} />
-//           <Route
-//             path="/game/witchalchemy"
-//             element={<GameDetail id="witchalchemy" />}
-//           />
-//           <Route path="/game/cryrec" element={<GameDetail id="cryrec" />} />
-//           <Route
-//             path="/game/planetwars"
-//             element={<GameDetail id="planetwars" />}
-//           />
-//           <Route path="/website" element={<Website />} />
-//           <Route path="/documentary" element={<Documentary />} />
-//           <Route path="/playground" element={<Playground />} />
-//           <Route path="/about" element={<About />} />
-//         </Routes>
-//       </Layout>
-//       <style>{globalCss}</style>
-//     </BrowserRouter>
-//   );
-// }
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -991,21 +965,7 @@ function GameDetail({ id }: { id: string }) {
             }}
             dangerouslySetInnerHTML={{ __html: s.text }}
           />
-          {s.img && (
-            <img
-              src={s.img}
-              alt={`Step ${i + 1}`}
-              style={{
-                width: "100%",
-                maxWidth: 900,
-                display: "block",
-                margin: "0 auto",
-                border: "none",
-                borderRadius: 0,
-                boxShadow: "none",
-              }}
-            />
-          )}
+          {s.img && <Media src={s.img} alt={`Step ${i + 1}`} />}
         </div>
       ))}
 
